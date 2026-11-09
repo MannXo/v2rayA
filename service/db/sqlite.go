@@ -33,7 +33,7 @@ func sqliteDSN(path string) string {
 
 func validateSQLiteDriver() error {
 	if sqliteDriverName == "" {
-		return errors.New("mips/loong64 build requires CGO_ENABLED=1 to enable sqlite driver")
+		return errors.New("mips-family build requires CGO_ENABLED=1 to enable sqlite driver")
 	}
 	return nil
 }
